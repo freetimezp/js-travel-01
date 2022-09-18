@@ -268,7 +268,15 @@ input {
 }
 
 /* Change background header */
+.scroll-header {
+    background-color: var(--body-color);
+    box-shadow: 0 0 8px hsla(var(--hue-color), 64%, 15%, 0.25);
+}
 
+.scroll-header .nav__logo,
+.scroll-header .nav__toggle {
+    color: var(--title-color);
+}
 
 /* Active link */
 
