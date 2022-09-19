@@ -92,7 +92,8 @@ body.dark-theme {
     bottom: 4rem;
 }
 
-.change-theme, .change-theme-name {
+.change-theme,
+.change-theme-name {
     color: var(--text-color);
 }
 
