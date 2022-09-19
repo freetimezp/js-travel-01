@@ -280,7 +280,20 @@ input {
 }
 
 /* Active link */
+.active-link {
+    position: relative;
+    color: var(--title-color);
+}
 
+.active-link:before {
+    content: '';
+    position: absolute;
+    background-color: var(--title-color);
+    width: 100%;
+    height: 2px;
+    bottom: -0.75rem;
+    left: 0;
+}
 
 /*=============== HOME ===============*/
 .home__img {
@@ -718,6 +731,10 @@ input {
     margin-right: var(--mb-1-25);
 }
 
+.footer__social:hover {
+    color: var(--text-color);
+}
+
 .footer__subtitle {
     margin-bottom: var(--mb-1);
 }
@@ -758,13 +775,45 @@ input {
 }
 
 /*========== SCROLL UP ==========*/
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    background-color: var(--first-color);
+    padding: 0.5rem;
+    display: flex;
+    opacity: 0.9;
+    z-index: var(--z-tooltip);
+    transition: var(--my-transition);
+}
 
+.scrollup__icon {
+    color: var(--white-color);
+}
+
+.scrollup:hover {
+    background-color: var(--first-color-alt);
+    opacity: 1;
+}
 
 /* Show scroll */
-
+.show-scroll {
+    bottom: 5rem;
+}
 
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+    width: 0.6rem;
+    background-color: var(--scroll-bar-color);
+}
 
+::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--text-color-light);
+}
 
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
